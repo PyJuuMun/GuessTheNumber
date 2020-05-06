@@ -1,6 +1,15 @@
-function OnStart(){
-    <input name="guessField">
+var secretNumber;
+var guessedNumbers = [];
 
-    </input>
-    <button type="button" name="guessButton">Guess</button>
+function start()
+{
+    secretNumber = Math.floor(Math.random() * 100) +1;
+    console.log(secretNumber);
+}
+
+function guessButtonPressed()
+{
+    console.log("Button pressed.")
+    var usersGuess = parseInt(document.querySelector(".guessField"));
+    console.log(usersGuess);
 }

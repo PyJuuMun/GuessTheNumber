@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> 
 </head>
-<body onload="OnStart()">    
+<body onload="start()">
+
+    Pick a number between 1 to 100: <input id="guessField"></input>
+
+    <button id="guessButton" type="button" onclick="guessButtonPressed()">Make a guess</button>
+    <p id="messageBox"></p>
+    <p id="wrongGuesses"></p>
     
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
