@@ -1,6 +1,8 @@
 var secretNumber;
 var guessedNumbers = [];
 
+const guessField = document.querySelector(".guessField")
+
 function start()
 {
     secretNumber = Math.floor(Math.random() * 100) +1;
@@ -10,6 +12,6 @@ function start()
 function guessButtonPressed()
 {
     console.log("Button pressed.")
-    var usersGuess = parseInt(document.querySelector(".guessField"));
+    var usersGuess = Number(guessField.value);
     console.log(usersGuess);
 }
